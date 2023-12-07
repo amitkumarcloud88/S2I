@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos
 RUN  yum -y  install  httpd
 RUN  sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf
 COPY src/   /var/www/html
